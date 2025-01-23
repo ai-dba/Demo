@@ -1,0 +1,8 @@
+
+/* 
+This Query has been Tuned by AI-DBA Query Optimizer (v1.7.0.0).
+Copyright (C) 2019-2025 AI-DBA Software Inc, all rights reserved.
+Date: 1/23/2025 2:56:52 PM UTC
+*/
+BEGIN TRY     CREATE NONCLUSTERED INDEX AIDBA_NCIX_250123145707 ON [ADVENTUREWORKS].[SALES].[CUSTOMER] ([STOREID]) INCLUDE ([PERSONID]) ;
+ END TRY BEGIN CATCH END CATCH;
