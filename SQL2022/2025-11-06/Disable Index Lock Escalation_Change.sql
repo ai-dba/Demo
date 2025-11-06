@@ -1,0 +1,386 @@
+
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_Address_rowguid] ON [AdventureWorks].[Person].[Address] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_BusinessEntity_rowguid] ON [AdventureWorks].[Person].[BusinessEntity] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_BusinessEntityAddress_rowguid] ON [AdventureWorks].[Person].[BusinessEntityAddress] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_CreditCard_CardNumber] ON [AdventureWorks].[Sales].[CreditCard] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_CurrencyRate_CurrencyRateDate_FromCurrencyCode_ToCurrencyCode] ON [AdventureWorks].[Sales].[CurrencyRate] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_Customer_AccountNumber] ON [AdventureWorks].[Sales].[Customer] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_Customer_rowguid] ON [AdventureWorks].[Sales].[Customer] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_Person_rowguid] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_SalesOrderDetail_rowguid] ON [AdventureWorks].[Sales].[SalesOrderDetail] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_SalesOrderHeader_rowguid] ON [AdventureWorks].[Sales].[SalesOrderHeader] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [AK_SalesOrderHeader_SalesOrderNumber] ON [AdventureWorks].[Sales].[SalesOrderHeader] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_Address_AddressLine1_AddressLine2_City_StateProvinceID_PostalCode] ON [AdventureWorks].[Person].[Address] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_Address_StateProvinceID] ON [AdventureWorks].[Person].[Address] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_AIDBA_1_20250823] ON [AdventureWorks].[Sales].[SalesOrderHeader] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_AIDBA_1_20250826] ON [AdventureWorks].[Sales].[SalesOrderHeader] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_BusinessEntityAddress_AddressID] ON [AdventureWorks].[Person].[BusinessEntityAddress] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_BusinessEntityAddress_AddressTypeID] ON [AdventureWorks].[Person].[BusinessEntityAddress] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_Customer_TerritoryID] ON [AdventureWorks].[Sales].[Customer] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_EmailAddress_EmailAddress] ON [AdventureWorks].[Person].[EmailAddress] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_Orderqty_ProductID_UnitPrice-20250929-040322] ON [AdventureWorks].[Sales].[SalesOrderDetail] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_Person_LastName_FirstName_MiddleName] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_PersonPhone_PhoneNumber] ON [AdventureWorks].[Person].[PersonPhone] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_SalesOrderDetail_ProductID] ON [AdventureWorks].[Sales].[SalesOrderDetail] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_SalesOrderHeader_CustomerID] ON [AdventureWorks].[Sales].[SalesOrderHeader] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_SalesOrderHeader_SalesPersonID] ON [AdventureWorks].[Sales].[SalesOrderHeader] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_TransactionHistory_ProductID] ON [AdventureWorks].[Production].[TransactionHistory] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_TransactionHistory_ReferenceOrderID_ReferenceOrderLineID] ON [AdventureWorks].[Production].[TransactionHistory] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_TransactionHistoryArchive_ProductID] ON [AdventureWorks].[Production].[TransactionHistoryArchive] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_TransactionHistoryArchive_ReferenceOrderID_ReferenceOrderLineID] ON [AdventureWorks].[Production].[TransactionHistoryArchive] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_WorkOrder_ProductID] ON [AdventureWorks].[Production].[WorkOrder] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_WorkOrder_ScrapReasonID] ON [AdventureWorks].[Production].[WorkOrder] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [IX_WorkOrderRouting_ProductID] ON [AdventureWorks].[Production].[WorkOrderRouting] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_Address_AddressID] ON [AdventureWorks].[Person].[Address] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_BusinessEntity_BusinessEntityID] ON [AdventureWorks].[Person].[BusinessEntity] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_BusinessEntityAddress_BusinessEntityID_AddressID_AddressTypeID] ON [AdventureWorks].[Person].[BusinessEntityAddress] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_CreditCard_CreditCardID] ON [AdventureWorks].[Sales].[CreditCard] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_CurrencyRate_CurrencyRateID] ON [AdventureWorks].[Sales].[CurrencyRate] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_Customer_CustomerID] ON [AdventureWorks].[Sales].[Customer] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_EmailAddress_BusinessEntityID_EmailAddressID] ON [AdventureWorks].[Person].[EmailAddress] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_Password_BusinessEntityID] ON [AdventureWorks].[Person].[Password] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_Person_BusinessEntityID] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_PersonCreditCard_BusinessEntityID_CreditCardID] ON [AdventureWorks].[Sales].[PersonCreditCard] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID] ON [AdventureWorks].[Person].[PersonPhone] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID] ON [AdventureWorks].[Sales].[SalesOrderDetail] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_SalesOrderHeader_SalesOrderID] ON [AdventureWorks].[Sales].[SalesOrderHeader] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_SalesOrderHeaderSalesReason_SalesOrderID_SalesReasonID] ON [AdventureWorks].[Sales].[SalesOrderHeaderSalesReason] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_TransactionHistory_TransactionID] ON [AdventureWorks].[Production].[TransactionHistory] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_TransactionHistoryArchive_TransactionID] ON [AdventureWorks].[Production].[TransactionHistoryArchive] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_WorkOrder_WorkOrderID] ON [AdventureWorks].[Production].[WorkOrder] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PK_WorkOrderRouting_WorkOrderID_ProductID_OperationSequence] ON [AdventureWorks].[Production].[WorkOrderRouting] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PXML_Person_AddContact] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [PXML_Person_Demographics] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [XMLPATH_Person_Demographics] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [XMLPROPERTY_Person_Demographics] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
+		
+	IF DB_ID('AdventureWorks') IS NOT NULL
+	BEGIN
+		ALTER INDEX [XMLVALUE_Person_Demographics] ON [AdventureWorks].[Person].[Person] SET (ALLOW_PAGE_LOCKS = OFF);
+	END
+	--GO;
+	
